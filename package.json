@@ -1,0 +1,16 @@
+{
+  "name": "agentcore-gateway-request-interceptor",
+  "version": "1.0.0",
+  "description": "TypeScript Lambda with API Gateway proxy integration",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "npm run build && cd dist && zip -r lambda.zip .",
+    "deploy": "./deploy.sh"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.131",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
